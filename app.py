@@ -370,7 +370,7 @@ WORKFLOW_MD = """
 
 If you use this tool, please cite:
 
-> Galindo et al., *AI-assisted protein design to rapidly convert antibody sequences to intrabodies targeting diverse peptides and histone modifications.* Science Advances (2026). [doi:10.1126/sciadv.adx8352](https://www.science.org/doi/10.1126/sciadv.adx8352)
+> Galindo and Maejima et al., *AI-assisted protein design to rapidly convert antibody sequences to intrabodies targeting diverse peptides and histone modifications.* Science Advances (2026). [doi:10.1126/sciadv.adx8352](https://www.science.org/doi/10.1126/sciadv.adx8352)
 
 Source code: [github.com/Colorado-State-University-Stasevich-Lab/scfv-design-space](https://github.com/Colorado-State-University-Stasevich-Lab/scfv-design-space)
 
