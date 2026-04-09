@@ -9,17 +9,19 @@ license: mit
 short_description: Two-step scFv antibody redesign with ProteinMPNN
 ---
 
-# scFv Design Space
+# Antibody to Intrabody Pipeline
 
-A two-step pipeline for scFv antibody redesign using ProteinMPNN and structure-based CDR analysis.
+A two-step pipeline for converting antibody sequences into scFv intrabodies using ProteinMPNN.
 
 ## Overview
 
-**Step 1 — scFv Builder:** Provide an antibody heavy chain (VH) and light chain (VL) sequence. The app runs [ColabFold](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb) (via AlphaFold2) to fold the scFv, identifies CDR loops using ANARCI, and produces a summary HTML with numbered sequences and a FASTA ready for Step 2.
+**Step 1 — scFv Builder:** Upload an antibody structure (PDB/CIF) or sequence (FASTA). The app identifies VH and VL domains, assembles them into a single-chain variable fragment (scFv) with a linker, and outputs a FASTA ready for structure prediction.
 
-**Step 2 — scFv-MPNN-Light:** Provide a folded scFv structure (PDB or CIF — fold using any method, e.g. the [AlphaFold server](https://alphafoldserver.com)). ProteinMPNN redesigns CDR and Vernier positions while holding the framework fixed. Designs are scored with scfvtools and ranked by BLOSUM substitution score. Top, bottom, and random selections are returned as a downloadable HTML summary.
+**→ Fold the scFv:** Use any tool to obtain a 3D structure from the FASTA, e.g. the [AlphaFold server](https://alphafoldserver.com). If you have an epitope, we recommend folding the scFv together with the epitope as a multimer.
 
-If you already have a folded scFv structure, skip Step 1 and go directly to Step 2.
+**Step 2 — scFv-MPNN-Light:** Upload the folded scFv structure (PDB or CIF). ProteinMPNN redesigns the framework while keeping CDRs and nearby residues fixed. Designs are ranked by scfvtools, which scores each sequence by comparison to a consensus derived from intrabodies proven to work.
+
+**If you already have a folded scFv structure, skip Step 1 and go directly to Step 2.**
 
 ## Features
 

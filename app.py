@@ -360,7 +360,7 @@ WORKFLOW_MD = """
 
 **→ Fold the scFv:** Use any tool to obtain a 3D structure from the FASTA, e.g. [AlphaFold Server](https://alphafoldserver.com). Download the resulting CIF or PDB file. If you have an epitope sequence, we recommend folding the scFv together with the epitope as a multimer — this gives ProteinMPNN a more realistic binding context.
 
-**Step 2 — scFv-MPNN-Light:** Upload the folded CIF (or any existing scFv PDB/CIF). ProteinMPNN redesigns the framework regions while keeping CDRs fixed. Designs are scored with scfvtools and ranked for download.
+**Step 2 — scFv-MPNN-Light:** Upload the folded CIF (or any existing scFv PDB/CIF). ProteinMPNN redesigns the framework while keeping CDRs and nearby residues fixed. Designs are ranked by scfvtools, which scores each sequence by comparison to a consensus derived from intrabodies proven to work.
 
 **If you already have a folded scFv structure, you can skip Step 1 and go directly to Step 2.**
 
