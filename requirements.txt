@@ -1,0 +1,9 @@
+gradio>=4.0
+huggingface_hub
+torch --index-url https://download.pytorch.org/whl/cpu
+numpy
+pandas
+biopython
+gemmi
+anarci
+git+https://github.com/Colorado-State-University-Stasevich-Lab/scfvtools.git
