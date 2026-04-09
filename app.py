@@ -362,7 +362,7 @@ WORKFLOW_MD = """
 
 **Step 2 — scFv-MPNN-Light:** Upload the folded CIF (or any existing scFv PDB/CIF). ProteinMPNN redesigns the framework regions while keeping CDRs fixed. Designs are scored with scfvtools and ranked for download.
 
-If you already have a folded scFv structure, you can skip Step 1 and go directly to Step 2.
+**If you already have a folded scFv structure, you can skip Step 1 and go directly to Step 2.**
 
 ---
 
@@ -376,6 +376,7 @@ Source code: [github.com/Colorado-State-University-Stasevich-Lab/scfv-design-spa
 
 This app also uses:
 > Dauparas et al., *Robust deep learning–based protein sequence design using ProteinMPNN.* Science 378, 49–56 (2022).
+
 > Dunbar & Deane, *ANARCI: antigen receptor numbering and receptor classification.* Bioinformatics 32, 298–300 (2016).
 """
 
