@@ -352,7 +352,7 @@ def run_mpnn_light(
 # ─────────────────────────────────────────────────────────────────────────────
 
 WORKFLOW_MD = """
-## Two-step scFv antibody redesign pipeline
+## Two-step antibody to scFv intrabody design pipeline
 
 ### How it works
 
@@ -380,8 +380,8 @@ This app also uses:
 > Dunbar & Deane, *ANARCI: antigen receptor numbering and receptor classification.* Bioinformatics 32, 298–300 (2016).
 """
 
-with gr.Blocks(title="scFv Design Pipeline") as demo:
-    gr.Markdown("# scFv Design Pipeline")
+with gr.Blocks(title="Antibody to Intrabody Pipeline") as demo:
+    gr.Markdown("# Antibody to Intrabody Pipeline")
     gr.Markdown(WORKFLOW_MD)
 
     with gr.Tabs():
